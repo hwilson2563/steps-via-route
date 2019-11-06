@@ -34,7 +34,7 @@ a, a:active, a:visited, a:hover {
 .rightContentContainer {
     margin-left: 200px;
     width: 80%;
-    display: contents;
+    display: block;
 }
 
 li.nav {
