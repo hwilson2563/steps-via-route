@@ -1,21 +1,19 @@
-import React from 'react';
-import Header from './components/layout/Header';
-import Sidebar from './components/layout/Sidebar';
+import React from 'react'
+import Header from './components/layout/Header'
+import Sidebar from './components/layout/Sidebar'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
+import Home from './components/Home'
 
 const App = () => {
+  return (
+    <Router>
+      <Header />
+      <Sidebar />
+      <div className='rightContentContainer'>
+        <Route path='/' component={Home} />
+      </div>
+    </Router>
+  )
+}
 
-    return (
-        <div>
-            <Header/>
-            <Sidebar/>
-            <div className='rightContentContainer'>
-
-                <h1>Welcome to the Course</h1>
-
-            </div>
-        </div>
-    );
-};
-
-
-export default App;
+export default App
