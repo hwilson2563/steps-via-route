@@ -1,12 +1,17 @@
-import React from "react";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
 const Sidebar = () => {
+  return (
+    <div className={'leftNavContainer'}>
+      <Link to='/' className={'navLink'}>
+        Home
+      </Link>
+      <Link to='/prompt' className={'navLink'}>
+        Prompt
+      </Link>
+    </div>
+  )
+}
 
-    return (
-        <div className={'leftNavContainer'}>
-
-        </div>
-    );
-};
-
-export default Sidebar;
+export default Sidebar
